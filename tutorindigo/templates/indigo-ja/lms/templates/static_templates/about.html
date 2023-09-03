@@ -10,7 +10,16 @@
             <%block name="pageheader">${page_header or _("About")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">{{ PLATFORM_NAME }} is an online learning platform powered by <a href="https://open.edx.org">Open edX</a>. It runs with <a href="https://docs.tutor.overhang.io">Tutor</a>, with the customized <a href="https://github.com/overhangio/tutor-indigo">Indigo</a> theme.</%block>
+            <%block name="pagecontent">
+		   {% if request.LANGUAGE_CODE == 'fr' %}
+			   {{ PLATFORM_NAME }} est une plateforme en ligne proposant des formations en langue française ainsi que des formations visant à aider les personnes à trouver un emploi en France.
+		   {% elif request.LANGUAGE_CODE == 'ru' %}
+			   {{ PLATFORM_NAME }} - это онлайн-платформа, предлагающая обучение французскому языку и программы, направленные на помощь людям в поиске работы во Франции.
+		   {% elif request.LANGUAGE_CODE == 'uk' %}
+			   {{ PLATFORM_NAME }} - це онлайн-платформа, яка пропонує навчання французької мови, а також програми, спрямовані на допомогу людям у пошуку роботи у Франції.
+		   {% endif %}
+	    </%block>
+        </p>
         </p>
     </section>
 </main>

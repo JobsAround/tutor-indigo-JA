@@ -10,7 +10,7 @@ config = {
     # Add here your new settings
     "defaults": {
         "VERSION": __version__,
-        "WELCOME_MESSAGE": "The place for all your online learning",
+        "WELCOME_MESSAGE": "Formations pour accéder à l'emploi en France, pour tous",
         "PRIMARY_COLOR": "#3b85ff",  # cool blue
         # Footer links are dictionaries with a "title" and "url"
         # To remove all links, run:
