@@ -25,18 +25,18 @@ ABOUT = load_about()
 
 
 setup(
-    name="tutor-indigo",
+    name="tutor-indigo-ja",
     version=ABOUT["__version__"],
-    url="https://github.com/overhangio/tutor-indigo",
+    url="https://github.com/JobsAround/tutor-indigo-JA",
     project_urls={
         "Documentation": "https://docs.tutor.overhang.io/",
-        "Code": "https://github.com/overhangio/tutor-indigo",
-        "Issue tracker": "https://github.com/overhangio/tutor-indigo/issues",
+        "Code": "https://github.com/JobsAround/tutor-indigo-JA",
+        "Issue tracker": "https://github.com/JobsAround/tutor-indigo-JA/issues",
         "Community": "https://discuss.openedx.org",
     },
     license="AGPLv3",
-    author="Overhang.IO",
-    author_email="contact@overhang.io",
+    author="Overhang.IO x JobsAround",
+    author_email="vincent@jobsaround.fr",
     maintainer="Overhang.IO",
     maintainer_email="regis@overhang.io",
     description="Indigo theme plugin for Tutor, for Jobs Around",
